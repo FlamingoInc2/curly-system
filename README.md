@@ -82,8 +82,47 @@ Our app will allow users to view and recieve notifications of stocks. Users will
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+Users
+| Property | Type     | Description |
+| -------- | -------- | -------- |
+| userId   | Number   | Unique id for the user  |
+| email    | string   | User email for login |
+| password | string   | Password for login     |
+| followedStocks | string | Unique idenifier for stock |
+
+
+Alerts
+| Property | Type     | Description |
+| -------- | -------- | -------- |
+| alertKey | number  | Primary key  |
+| userId   | Pointer to user   | Id to link to user  |
+| stockSymbol    | string   | Symbol of stock |
+| alertAtPrice | string  | Price that alert activates  |
+
+
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+USER
+| CRUD  | HTTP Verb | Example|
+| -------- | -------- | -------- |
+|  Read  | GET    | Getting stocks for user's feed  |
+| Update   | PUT      |Adding stocks to main page |
+| Delete| DELETE| deleting stock choices off main page|
+ 
+ ALERTS
+ | CRUD  | HTTP Verb | Example|
+| -------- | -------- | -------- |
+|  Read  | GET    | Recieve alerts on set parameters |
+| Update | PUT      |Update when user would like to recieve alerts  |
+| Delete| DELETE| Deleting alerts|
+
+
+
+| Parse Method            | Example                       |
+| ----------------------- | ----------------------------- |
+| Create and Save objects | Adding new stock to main page |
+|Query objects and set conditions| Getting stocks for user's feed|
+|Query object, update properties & save| Changing stocks listed on user feed|
+|Query object and delete| Deleting alerts or stocks from main page|
