@@ -1,7 +1,7 @@
 Original App Design Project - README Template
 ===
 
-# Flamingo Finance
+# Flamingo Finance - Group 15
 
 ## Table of Contents
 1. [Overview](#Overview)
