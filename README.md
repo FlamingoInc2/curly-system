@@ -128,3 +128,7 @@ USER
 |Query objects and set conditions| Getting stocks for user's feed|
 |Query object, update properties & save| Changing stocks listed on user feed|
 |Query object and delete| Deleting alerts or stocks from main page|
+
+
+
+<img src='https://media.giphy.com/media/kIswQSQ3tuA0d4DyhN/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
