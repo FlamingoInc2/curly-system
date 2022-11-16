@@ -173,7 +173,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="LOG IN"/>
                                 <connections>
-                                    <segue destination="yx6-9D-ido" kind="push" id="UOk-qh-YMt"/>
+                                    <segue destination="yx6-9D-ido" kind="presentation" id="5jd-sZ-reV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oue-r0-76E">
@@ -272,9 +272,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fkE-c8-Ny3"/>
-        <segue reference="gCs-zq-wEx"/>
-        <segue reference="IpI-ZQ-Gvt"/>
+        <segue reference="5jd-sZ-reV"/>
+        <segue reference="ear-32-Weo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Flamingo Finance" width="128" height="128"/>
