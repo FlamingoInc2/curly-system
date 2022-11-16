@@ -29,12 +29,12 @@ Our app will allow users to view and recieve notifications of stocks. Users will
 **Required Must-have Stories**
 
 - [X] Layout for Login and Signin
-- [] Layout for Mainfeed and Search
-- [] Stocks are shown
-- [] Stocks will have different color when rising, neutral and dropping 
-- [] Push notifications will allow users to see stock changes 
-- [] User will be able to create an account to save their prefered stocks
-- [] Search bar to add more information on first page for that user
+- [ ] Layout for Mainfeed and Search
+- [ ] Stocks are shown
+- [ ] Stocks will have different color when rising, neutral and dropping 
+- [ ] Push notifications will allow users to see stock changes 
+- [ ] User will be able to create an account to save their prefered stocks
+- [ ] Search bar to add more information on first page for that user
 
 **Optional Nice-to-have Stories**
 
