@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8an-3Y-gRc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8an-3Y-gRc">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,9 +11,9 @@
         <!--Title-->
         <scene sceneID="flr-5a-d7s">
             <objects>
-                <viewController id="8an-3Y-gRc" customClass="LoginViewController" customModule="Finance" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="8an-3Y-gRc" customClass="LoginViewController" customModule="Finance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="djE-Ch-QWz">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="afd-OM-YmM">
@@ -97,9 +97,9 @@
         <!--View Controller-->
         <scene sceneID="mFa-KF-wMD">
             <objects>
-                <viewController id="8KK-NH-eJg" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="8KK-NH-eJg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2mC-sx-Dj6">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SIGN UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da6-9Y-dPE">
@@ -141,7 +141,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="LOG IN"/>
                                 <connections>
-                                    <segue destination="yx6-9D-ido" kind="push" id="UOk-qh-YMt"/>
+                                    <segue destination="yx6-9D-ido" kind="presentation" id="40i-MR-zEa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oue-r0-76E">
@@ -166,9 +166,9 @@
         <!--View Controller-->
         <scene sceneID="vPQ-QY-ZP0">
             <objects>
-                <viewController id="yx6-9D-ido" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="yx6-9D-ido" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u3Q-oi-axd">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stocks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj6-OO-EeZ">
@@ -233,20 +233,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="QW3-XB-YSh"/>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="DP9-MD-Zuf" id="95B-Yl-gzX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sBG-9E-Cvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="DP9-MD-Zuf">
-                    <connections>
-                        <outlet property="delegate" destination="yx6-9D-ido" id="4zV-lI-L9l"/>
-                        <outlet property="searchBar" destination="1IR-Ma-WrA" id="cxn-uh-W4U"/>
-                        <outlet property="searchContentsController" destination="yx6-9D-ido" id="nA0-Xe-bGd"/>
-                        <outlet property="searchResultsDataSource" destination="yx6-9D-ido" id="LJR-Yv-hYV"/>
-                        <outlet property="searchResultsDelegate" destination="yx6-9D-ido" id="DRJ-wa-KSx"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="2869.4656488549617" y="-33.098591549295776"/>
         </scene>
