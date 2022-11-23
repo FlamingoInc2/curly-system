@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8an-3Y-gRc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8an-3Y-gRc">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -50,7 +50,7 @@
                                 <color key="tintColor" systemColor="systemPinkColor"/>
                                 <buttonConfiguration key="configuration" style="filled" title="LOG IN"/>
                                 <connections>
-                                    <segue destination="yx6-9D-ido" kind="presentation" id="nx7-lZ-IbR"/>
+                                    <action selector="onSignIn:" destination="8an-3Y-gRc" eventType="touchUpInside" id="Bfy-zX-8XP"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="My project-1" translatesAutoresizingMaskIntoConstraints="NO" id="mvd-ld-Lck">
@@ -92,16 +92,17 @@
                     <connections>
                         <outlet property="passwordField" destination="QqZ-yS-N1b" id="aNV-cL-HFs"/>
                         <outlet property="usernameField" destination="afd-OM-YmM" id="usN-aj-B95"/>
+                        <segue destination="yx6-9D-ido" kind="presentation" identifier="loginSegue" id="vxd-EW-l0V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VcZ-iL-Xyf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="983.96946564885491" y="234.50704225352115"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="mFa-KF-wMD">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="8KK-NH-eJg" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="8KK-NH-eJg" customClass="SignUpViewController" customModule="Finance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2mC-sx-Dj6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,13 +123,13 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="systemPinkColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGp-mN-MjR">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGp-mN-MjR" userLabel="Username Text Field">
                                 <rect key="frame" x="207" y="281" width="126" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GZl-eL-7NS">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GZl-eL-7NS" userLabel="Password Text Field">
                                 <rect key="frame" x="207" y="374" width="126" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -148,11 +149,11 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="systemPinkColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="LOG IN">
+                                <buttonConfiguration key="configuration" style="filled" title="Sign Up">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="yx6-9D-ido" kind="presentation" id="40i-MR-zEa"/>
+                                    <action selector="onSignup:" destination="8KK-NH-eJg" eventType="touchUpInside" id="q5H-nU-PoZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oue-r0-76E">
@@ -173,6 +174,11 @@
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="CmB-O3-Ifx"/>
+                    <connections>
+                        <outlet property="passwordField" destination="GZl-eL-7NS" id="a1c-1S-MoA"/>
+                        <outlet property="usernameField" destination="xGp-mN-MjR" id="5kd-yw-baZ"/>
+                        <segue destination="yx6-9D-ido" kind="presentation" identifier="loginSignSegue" id="AvR-ij-SCN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QCh-F6-OMH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,7 +261,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="40i-MR-zEa"/>
+        <segue reference="vxd-EW-l0V"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="My project-1" width="250" height="250"/>
