@@ -50,7 +50,7 @@
                                 <color key="tintColor" systemColor="systemPinkColor"/>
                                 <buttonConfiguration key="configuration" style="filled" title="LOG IN"/>
                                 <connections>
-                                    <segue destination="yx6-9D-ido" kind="push" id="hQw-dk-Elb"/>
+                                    <segue destination="yx6-9D-ido" kind="presentation" id="nx7-lZ-IbR"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="My project-1" translatesAutoresizingMaskIntoConstraints="NO" id="mvd-ld-Lck">
@@ -80,7 +80,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                 <connections>
-                                    <segue destination="8KK-NH-eJg" kind="push" id="KOH-Lq-Q27"/>
+                                    <segue destination="8KK-NH-eJg" kind="presentation" id="qLM-ID-oLr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -150,7 +150,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="BACK"/>
                                 <connections>
-                                    <segue destination="8an-3Y-gRc" kind="push" id="p2m-IZ-3XH"/>
+                                    <segue destination="8an-3Y-gRc" kind="presentation" id="Vt1-eZ-48u"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -240,7 +240,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hQw-dk-Elb"/>
+        <segue reference="40i-MR-zEa"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="My project-1" width="250" height="250"/>
