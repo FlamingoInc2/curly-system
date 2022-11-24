@@ -126,3 +126,8 @@ USER
 |Query objects and set conditions| Getting stocks for user's feed|
 |Query object, update properties & save| Changing stocks listed on user feed|
 |Query object and delete| Deleting alerts or stocks from main page|
+
+
+Sprint 2 Gif
+<img src='https://media.giphy.com/media/4NRscjgHzsFW0sPQ9C/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
