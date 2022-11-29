@@ -1,0 +1,6 @@
+framework module PolygonioSwift {
+  umbrella header "PolygonioSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

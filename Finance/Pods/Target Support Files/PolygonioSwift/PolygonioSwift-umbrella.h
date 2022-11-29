@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_FinanceTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_FinanceTestsVersionString[];
+FOUNDATION_EXPORT double PolygonioSwiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char PolygonioSwiftVersionString[];
 

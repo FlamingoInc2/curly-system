@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C8ACDBEA3B417FE115DBB359248FA299"
-               BuildableName = "Pods_Finance_FinanceUITests.framework"
-               BlueprintName = "Pods-Finance-FinanceUITests"
+               BlueprintIdentifier = "EBE064B3B05583722363CC021397E806"
+               BuildableName = "PolygonioSwift.framework"
+               BlueprintName = "PolygonioSwift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

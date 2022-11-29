@@ -7,8 +7,11 @@
 
 import UIKit
 import Parse
+import PolygonioSwift
 
 class StocksViewController: UIViewController {
+    
+    let polygon = PolygonioSwift.Client(key: "GQkhgfpwOpNtXYXY6pFIeJu6eifVV1C1")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,7 @@ class StocksViewController: UIViewController {
         
         delegate.window?.rootViewController = loginViewController
     }
+
     
     /*
     // MARK: - Navigation

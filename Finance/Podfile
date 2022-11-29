@@ -9,14 +9,7 @@ target 'Finance' do
   pod 'Parse'
   pod 'AlamofireImage'
   pod 'MessageInputBar'
+  pod 'PolygonioSwift'
 
-  target 'FinanceTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'FinanceUITests' do
-    # Pods for testing
-  end
 
 end
