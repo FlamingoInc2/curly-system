@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8an-3Y-gRc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8an-3Y-gRc">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -184,10 +184,10 @@
             </objects>
             <point key="canvasLocation" x="2011" y="477"/>
         </scene>
-        <!--View Controller-->
+        <!--Stocks View Controller-->
         <scene sceneID="vPQ-QY-ZP0">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="yx6-9D-ido" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StocksViewController" modalPresentationStyle="fullScreen" id="yx6-9D-ido" customClass="StocksViewController" customModule="Finance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u3Q-oi-axd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,7 +200,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1IR-Ma-WrA">
-                                <rect key="frame" x="-1" y="67" width="394" height="44"/>
+                                <rect key="frame" x="-2" y="67" width="394" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -255,7 +255,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Logout"/>
                                 <connections>
-                                    <segue destination="8an-3Y-gRc" kind="presentation" id="sJj-63-LgB"/>
+                                    <action selector="onLogout:" destination="yx6-9D-ido" eventType="touchUpInside" id="ItR-rQ-E1b"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -271,7 +271,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="AvR-ij-SCN"/>
-        <segue reference="Vt1-eZ-48u"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="My project-1" width="250" height="250"/>

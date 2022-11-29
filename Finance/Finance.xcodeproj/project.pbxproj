@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E17A2C2293589BA00051ABC /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17A2C1293589BA00051ABC /* StocksViewController.swift */; };
 		8E29CD482900A6110035E3D1 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29CD472900A6110035E3D1 /* CommentCell.swift */; };
 		8E5875DF292EC5F700A8CC4E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5875DE292EC5F700A8CC4E /* SignUpViewController.swift */; };
 		8E663B3B28F381540011F9DB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E663B3A28F381540011F9DB /* PostCell.swift */; };
@@ -26,6 +27,7 @@
 		2ADD20BE07B1333DE360BC1D /* Pods-FinanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTests.release.xcconfig"; path = "Target Support Files/Pods-FinanceTests/Pods-FinanceTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A1CD6A45116C6941036400E /* Pods_Finance_FinanceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finance_FinanceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECD769DF56B0C40049CFAF2 /* Pods-FinanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTests.debug.xcconfig"; path = "Target Support Files/Pods-FinanceTests/Pods-FinanceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E17A2C1293589BA00051ABC /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
 		8E29CD472900A6110035E3D1 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		8E5875DE292EC5F700A8CC4E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8E663B3A28F381540011F9DB /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				8E663B3A28F381540011F9DB /* PostCell.swift */,
 				8E29CD472900A6110035E3D1 /* CommentCell.swift */,
 				8E5875DE292EC5F700A8CC4E /* SignUpViewController.swift */,
+				8E17A2C1293589BA00051ABC /* StocksViewController.swift */,
 			);
 			path = Finance;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				8EC25BA528F36BA1007A4E10 /* LoginViewController.swift in Sources */,
 				8E5875DF292EC5F700A8CC4E /* SignUpViewController.swift in Sources */,
 				8ED9E41628F365A00061B47F /* AppDelegate.swift in Sources */,
+				8E17A2C2293589BA00051ABC /* StocksViewController.swift in Sources */,
 				8EC25BA728F36BB6007A4E10 /* FeedViewController.swift in Sources */,
 				8ED9E41828F365A00061B47F /* SceneDelegate.swift in Sources */,
 				8E663B3B28F381540011F9DB /* PostCell.swift in Sources */,

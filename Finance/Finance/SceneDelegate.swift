@@ -22,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if PFUser.current() != nil {
             let main = UIStoryboard(name: "Main", bundle: nil)
-            let feedNavigationController = main.instantiateViewController(withIdentifier: "LoginViewController")//This is ment for stay logged in fix later
-            window?.rootViewController = feedNavigationController
+            let StocksViewController = main.instantiateViewController(withIdentifier: "StocksViewController")//This is ment for stay logged in fix later
+            window?.rootViewController = StocksViewController
         }
     }
 
