@@ -128,6 +128,7 @@ USER
 |Query object and delete| Deleting alerts or stocks from main page|
 
 
-Sprint 2 Gif
-<img src='https://media.giphy.com/media/4NRscjgHzsFW0sPQ9C/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Sprint 3 Gif
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/107445912/204679545-eddd7802-938b-4962-94c2-2589def2618a.gif)
+
 
