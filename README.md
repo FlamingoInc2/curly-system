@@ -128,7 +128,8 @@ USER
 |Query object and delete| Deleting alerts or stocks from main page|
 
 
-Sprint 3 Gif
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/107445912/204679545-eddd7802-938b-4962-94c2-2589def2618a.gif)
+Sprint 4 Gif
+
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/107445912/206081252-42cae30b-47e1-434a-a697-37441e9c241a.gif)
 
 
