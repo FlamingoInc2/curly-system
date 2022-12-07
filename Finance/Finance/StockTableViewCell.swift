@@ -12,7 +12,7 @@ class StockTableViewCell: UITableViewCell {
 
     @IBOutlet weak var CompName: UILabel!
     @IBOutlet weak var currentPrice: UILabel!
-    @IBOutlet weak var upOrDown: UILabel!
+    
     
     
     
