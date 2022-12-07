@@ -8,11 +8,16 @@
 import UIKit
 import Parse
 import PolygonioSwift
+import SDWebImage
+
+
+
 
 class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let polygon = PolygonioSwift.Client(key: "7iB1JD_bxYO6wj7lQdXLsuPDhcMUup3W")
     let inputSymbols = ["AAPL", "AMC", "AMZN", "BAC", "BBBY", "COST", "CRM", "DIS", "FANG", "GOEV", "GOOG", "HAL", "HOOD", "HPE", "HZNP", "IBM", "IEP", "IIPR", "INTC", "IOVA", "IWM", "JAGX", "JAZZ", "JBLU", "JBSS", "JCSE", "JKS", "KMI", "KO", "LAC", "LAZR", "LCID", "MCD", "MMM", "MRVL"]
+    
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -31,6 +36,10 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
         polygon.tickerDetails(symbol: "\(inputSymbols[indexPath.row])") {
             (result: TickerDetailsResponse?, error) in print(result?.logo ?? "")
             cell.CompName.text = "\(result?.name ?? "na")"
+            
+
+            cell.compLogo.sd_setImage(with: URL(string: "\(result?.logo ?? "")"), placeholderImage: UIImage(named: "placeholder.png"))
+            
         }
     
           /* TO ADD LOGO
@@ -47,7 +56,7 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         
         // Do any additional setup after loading the view.
-        
+
         polygon.aggregates(ticker: "AAPL", multiplier: 1, timespan: .day, from: "2022-12-05", to: "2022-12-05") { (result:AggregatesResponse?, err) in
             // check if we got any errors
             if let err = err {
@@ -58,6 +67,9 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
+
+    
+
     
                                                
         /*

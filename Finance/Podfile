@@ -10,6 +10,7 @@ target 'Finance' do
   pod 'AlamofireImage'
   pod 'MessageInputBar'
   pod 'PolygonioSwift'
+  pod 'SDWebImage'
 
 
 end

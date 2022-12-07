@@ -11,12 +11,16 @@ PODS:
   - Parse/Core (1.19.3):
     - Bolts/Tasks (= 1.9.1)
   - PolygonioSwift (1.0.6)
+  - SDWebImage (5.14.2):
+    - SDWebImage/Core (= 5.14.2)
+  - SDWebImage/Core (5.14.2)
 
 DEPENDENCIES:
   - AlamofireImage
   - MessageInputBar
   - Parse
   - PolygonioSwift
+  - SDWebImage
 
 SPEC REPOS:
   trunk:
@@ -26,6 +30,7 @@ SPEC REPOS:
     - MessageInputBar
     - Parse
     - PolygonioSwift
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
@@ -34,7 +39,8 @@ SPEC CHECKSUMS:
   MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
   Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
   PolygonioSwift: b910c92211ef2d28c337f411e73fa07b4dff175b
+  SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
 
-PODFILE CHECKSUM: 2aab23404b51aa33b9a6a332edaa98f78fb14f27
+PODFILE CHECKSUM: 164c32d839235545e826c86f4c69ed88c8a80f09
 
 COCOAPODS: 1.11.3

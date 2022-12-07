@@ -23,11 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11B39C90408DCA29C0222169 /* Pods-Finance-FinanceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance-FinanceUITests.release.xcconfig"; path = "Target Support Files/Pods-Finance-FinanceUITests/Pods-Finance-FinanceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		15D52142F886B058A75263F8 /* Pods_FinanceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2ADD20BE07B1333DE360BC1D /* Pods-FinanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTests.release.xcconfig"; path = "Target Support Files/Pods-FinanceTests/Pods-FinanceTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A1CD6A45116C6941036400E /* Pods_Finance_FinanceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finance_FinanceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6ECD769DF56B0C40049CFAF2 /* Pods-FinanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTests.debug.xcconfig"; path = "Target Support Files/Pods-FinanceTests/Pods-FinanceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E17A2C1293589BA00051ABC /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
 		8E29CD472900A6110035E3D1 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		8E5875DE292EC5F700A8CC4E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +42,6 @@
 		9CC8F571B3D4B0115D40612E /* Pods_Finance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF26404A82E2553D2D91172 /* Pods-Finance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance.release.xcconfig"; path = "Target Support Files/Pods-Finance/Pods-Finance.release.xcconfig"; sourceTree = "<group>"; };
 		B8B8287EC44DAE8FCA770527 /* Pods-Finance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance.debug.xcconfig"; path = "Target Support Files/Pods-Finance/Pods-Finance.debug.xcconfig"; sourceTree = "<group>"; };
-		FFADA3B1AA3DEE2FC6708A16 /* Pods-Finance-FinanceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance-FinanceUITests.debug.xcconfig"; path = "Target Support Files/Pods-Finance-FinanceUITests/Pods-Finance-FinanceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +71,6 @@
 			children = (
 				B8B8287EC44DAE8FCA770527 /* Pods-Finance.debug.xcconfig */,
 				9CF26404A82E2553D2D91172 /* Pods-Finance.release.xcconfig */,
-				FFADA3B1AA3DEE2FC6708A16 /* Pods-Finance-FinanceUITests.debug.xcconfig */,
-				11B39C90408DCA29C0222169 /* Pods-Finance-FinanceUITests.release.xcconfig */,
-				6ECD769DF56B0C40049CFAF2 /* Pods-FinanceTests.debug.xcconfig */,
-				2ADD20BE07B1333DE360BC1D /* Pods-FinanceTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
