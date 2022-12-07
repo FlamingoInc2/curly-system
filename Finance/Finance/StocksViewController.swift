@@ -14,7 +14,7 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
     let polygon = PolygonioSwift.Client(key: "7iB1JD_bxYO6wj7lQdXLsuPDhcMUup3W")
     let inputSymbols = ["AAPL", "AMC", "AMZN", "BAC", "BBBY", "COST", "CRM", "DIS", "FANG", "GOEV", "GOOG", "HAL", "HOOD", "HPE", "HZNP", "IBM", "IEP", "IIPR", "INTC", "IOVA", "IWM", "JAGX", "JAZZ", "JBLU", "JBSS", "JCSE", "JKS", "KMI", "KO", "LAC", "LAZR", "LCID", "MCD", "MMM", "MRVL"]
     
-
+    
     @IBOutlet weak var tableView: UITableView!
     
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,7 +29,7 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
             cell.currentPrice.text = "\(result?.ticker.min.VWAP ?? 0)"
         }
         polygon.tickerDetails(symbol: "\(inputSymbols[indexPath.row])") {
-            (result: TickerDetailsResponse?, error) in print(result?.logo as Any)
+            (result: TickerDetailsResponse?, error) in print(result?.logo ?? "")
             cell.CompName.text = "\(result?.name ?? "na")"
         }
     
@@ -47,17 +47,17 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         
         // Do any additional setup after loading the view.
-    
+        
         polygon.aggregates(ticker: "AAPL", multiplier: 1, timespan: .day, from: "2022-12-05", to: "2022-12-05") { (result:AggregatesResponse?, err) in
             // check if we got any errors
             if let err = err {
                 print(err)
             } else {
-                print(result?.results)
                 print("***************************\n")
                 print(result?.results[0].open as Any)
             }
         }
+    }
     
                                                
         /*
@@ -70,38 +70,23 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
          }
          */
         
-        func onLogout(_ sender: Any) {
-            PFUser.logOut()
-            let main = UIStoryboard(name: "Main", bundle: nil)
-            let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
-            guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let
-                    delegate = windowScene.delegate as? SceneDelegate else { return }
-            
-            delegate.window?.rootViewController = loginViewController
-        }
+
                     
                                             
-                                                        }
                                                         
-                                                        /*
-                                                         polygon.tickerSnapshot(symbol: "AAPL") { (result:TickerSnapshotResponse?, err) in
-                                                         print(result?.ticker.day.high)
-                                                         print(result?.ticker.todaysChange)
-                                                         }
-                                                         
-                                                         
-                                                         
-                                                         
-                                                         polygon.tickerDetails(symbol: "AAPL") { (result:TickerDetailsResponse?, err) in
-                                                         // check if we got any errors
-                                                         if let err = err {
-                                                         print(err)
-                                                         } else {
-                                                         print(result?.marketcap)
-                                                         }
-                                                         } */
                                                         
-                                                    }
+    
+    @IBAction func onLogout(_ sender: Any) {
+         PFUser.logOut()
+         let main = UIStoryboard(name: "Main", bundle: nil)
+         let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let
+                 delegate = windowScene.delegate as? SceneDelegate else { return }
+         
+         delegate.window?.rootViewController = loginViewController
+     }
+    
+}
                                                     
                                                     
                 
