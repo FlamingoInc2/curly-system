@@ -16,22 +16,23 @@ import SDWebImage
 class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let polygon = PolygonioSwift.Client(key: "7iB1JD_bxYO6wj7lQdXLsuPDhcMUup3W")
-    let inputSymbols = ["AAPL", "AMC", "AMZN", "BAC", "BBBY", "COST", "CRM", "DIS", "FANG", "GOEV", "GOOG", "HAL", "HOOD", "HPE", "HZNP", "IBM", "IEP", "IIPR", "INTC", "IOVA", "IWM", "JAGX", "JAZZ", "JBLU", "JBSS", "JCSE", "JKS", "KMI", "KO", "LAC", "LAZR", "LCID", "MCD", "MMM", "MRVL"]
+    let inputSymbols = ["AAPL", "AMZN", "BAC", "BBBY", "COST", "CRM", "DIS", "FANG", "HAL", "HPE", "HZNP", "IBM", "IEP", "IIPR", "INTC", "IOVA", "JAGX", "JAZZ", "JBLU", "JBSS", "JKS", "KMI", "KO", "MMM", "MRVL", "NKE", "NFLX", "ORCL", "OXY", "PEP", "PYPL", "ROKU", "SBUX", "SHOP", "TSLA", "TSM"]
     
     
     
     @IBOutlet weak var tableView: UITableView!
     
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 35
+            return 36
         }
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StockTableViewCell") as! StockTableViewCell
         
         polygon.tickerSnapshot(symbol: "\(inputSymbols[indexPath.row])") {  (result:TickerSnapshotResponse?, err) in
-            
+                
             cell.currentPrice.text = "\(result?.ticker.min.VWAP ?? 0)"
+                
         }
         polygon.tickerDetails(symbol: "\(inputSymbols[indexPath.row])") {
             (result: TickerDetailsResponse?, error) in print(result?.logo ?? "")
