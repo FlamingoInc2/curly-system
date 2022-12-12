@@ -13,12 +13,19 @@ import SDWebImage
 
 
 
-class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     let polygon = PolygonioSwift.Client(key: "7iB1JD_bxYO6wj7lQdXLsuPDhcMUup3W")
     let inputSymbols = ["AAPL", "AMZN", "BAC", "BBBY", "COST", "CRM", "DIS", "FANG", "HAL", "HPE", "HZNP", "IBM", "IEP", "IIPR", "INTC", "IOVA", "JAGX", "JAZZ", "JBLU", "JBSS", "JKS", "KMI", "KO", "MMM", "MRVL", "NKE", "NFLX", "ORCL", "OXY", "PEP", "PYPL", "ROKU", "SBUX", "SHOP", "TSLA", "TSM"]
     
     
+    @IBOutlet weak var searchController: UISearchBar!
+    
+    func setupSearchBar () {
+        searchController.delegate = self
+        
+        
+    }
     
     @IBOutlet weak var tableView: UITableView!
     
