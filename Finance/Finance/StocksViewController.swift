@@ -44,6 +44,13 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         polygon.tickerSnapshot(symbol: "\(inputSymbols[indexPath.row])") {  (result:TickerSnapshotResponse?, err) in
                 
+            if (result?.ticker.todaysChange ?? 1 < 1){
+                cell.currentPrice.textColor = UIColor.red
+            }
+            else{
+                cell.currentPrice.textColor = UIColor.green
+            }
+            
             cell.currentPrice.text = "\(result?.ticker.min.VWAP ?? 0)"
                 
         }
