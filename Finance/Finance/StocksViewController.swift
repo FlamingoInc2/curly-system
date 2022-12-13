@@ -18,16 +18,22 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
     let polygon = PolygonioSwift.Client(key: "7iB1JD_bxYO6wj7lQdXLsuPDhcMUup3W")
     let inputSymbols = ["AAPL", "AMZN", "BAC", "BBBY", "COST", "CRM", "DIS", "FANG", "HAL", "HPE", "HZNP", "IBM", "IEP", "IIPR", "INTC", "IOVA", "JAGX", "JAZZ", "JBLU", "JBSS", "JKS", "KMI", "KO", "MMM", "MRVL", "NKE", "NFLX", "ORCL", "OXY", "PEP", "PYPL", "ROKU", "SBUX", "SHOP", "TSLA", "TSM"]
     
-    
-    @IBOutlet weak var searchController: UISearchBar!
-    
-    func setupSearchBar () {
-        searchController.delegate = self
-        
-        
+
+    @IBAction func searching(_ sender: Any) {
+        self.performSegue(withIdentifier: "searchSeg", sender: nil)
     }
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var textField: UITextField!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        // Get a reference to the second view controller
+        let secondViewController = segue.destination as! SearchViewController
+
+        // Set a variable in the second view controller with the String to pass
+        secondViewController.receivedString = textField.text!
+    }
+    
     
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return 36

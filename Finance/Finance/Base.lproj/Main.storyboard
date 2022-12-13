@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8an-3Y-gRc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8an-3Y-gRc">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -257,38 +257,60 @@
                                     <action selector="onLogout:" destination="yx6-9D-ido" eventType="touchUpInside" id="7rz-Lk-Uke"/>
                                 </connections>
                             </button>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOb-x4-5SQ">
-                                <rect key="frame" x="0.0" y="67" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSj-y0-C25">
+                                <rect key="frame" x="16" y="81" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                <connections>
+                                    <action selector="searching:" destination="yx6-9D-ido" eventType="editingDidEndOnExit" id="gor-4W-GSg"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Edo-qm-hxf"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="QW3-XB-YSh"/>
                     <connections>
-                        <outlet property="searchController" destination="wOb-x4-5SQ" id="tEw-zR-YGB"/>
-                        <outlet property="searchDisplayController" destination="vEp-mD-NlK" id="1Tz-7u-bEA"/>
                         <outlet property="tableView" destination="iUa-vp-2Vo" id="N2U-dv-bXq"/>
+                        <outlet property="textField" destination="GSj-y0-C25" id="rrb-Hz-mm1"/>
+                        <segue destination="LKk-Uh-brp" kind="presentation" identifier="searchSeg" id="AWt-SK-wqh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sBG-9E-Cvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="vEp-mD-NlK">
-                    <connections>
-                        <outlet property="delegate" destination="yx6-9D-ido" id="7UH-8I-zP8"/>
-                        <outlet property="searchBar" destination="wOb-x4-5SQ" id="PyU-pU-oJd"/>
-                        <outlet property="searchContentsController" destination="yx6-9D-ido" id="jQ1-Ps-9X2"/>
-                        <outlet property="searchResultsDataSource" destination="yx6-9D-ido" id="qop-sL-ndn"/>
-                        <outlet property="searchResultsDelegate" destination="yx6-9D-ido" id="2zh-kI-9kd"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="3463" y="-242"/>
+            <point key="canvasLocation" x="3461.8320610687019" y="-242.25352112676057"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="l6w-qE-fJB">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="LKk-Uh-brp" customClass="SearchViewController" customModule="Finance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cEq-RL-ifL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahx-uc-qJO">
+                                <rect key="frame" x="23" y="59" width="62" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <segue destination="yx6-9D-ido" kind="presentation" id="FBW-FS-XXT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E7Y-F6-0ZL"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFO-fc-QOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4390" y="-242"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vxd-EW-l0V"/>
+        <segue reference="AWt-SK-wqh"/>
+        <segue reference="FBW-FS-XXT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="My project-1" width="250" height="250"/>
