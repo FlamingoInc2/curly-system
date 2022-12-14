@@ -55,7 +55,7 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 
         }
         polygon.tickerDetails(symbol: "\(inputSymbols[indexPath.row])") {
-            (result: TickerDetailsResponse?, error) in print(result?.logo ?? "")
+            (result: TickerDetailsResponse?, error) in
             cell.CompName.text = "\(result?.name ?? "na")"
             
 
