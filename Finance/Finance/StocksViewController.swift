@@ -77,16 +77,6 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         
         // Do any additional setup after loading the view.
-
-        polygon.aggregates(ticker: "AAPL", multiplier: 1, timespan: .day, from: "2022-12-05", to: "2022-12-05") { (result:AggregatesResponse?, err) in
-            // check if we got any errors
-            if let err = err {
-                print(err)
-            } else {
-                print("***************************\n")
-                print(result?.results[0].open as Any)
-            }
-        }
     }
 
     

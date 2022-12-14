@@ -15,11 +15,15 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBOutlet weak var appLogo: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        appLogo.layer.cornerRadius = 40
+        appLogo.layer.borderWidth = 2
+        appLogo.layer.borderColor = UIColor.systemPink.cgColor
     }
     
     

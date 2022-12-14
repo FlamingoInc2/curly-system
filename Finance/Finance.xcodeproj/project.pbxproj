@@ -12,7 +12,6 @@
 		8E5875DF292EC5F700A8CC4E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5875DE292EC5F700A8CC4E /* SignUpViewController.swift */; };
 		8E663B3B28F381540011F9DB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E663B3A28F381540011F9DB /* PostCell.swift */; };
 		8EC25BA528F36BA1007A4E10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC25BA428F36BA1007A4E10 /* LoginViewController.swift */; };
-		8EC25BA728F36BB6007A4E10 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC25BA628F36BB6007A4E10 /* FeedViewController.swift */; };
 		8ED47219293FC32C007053CD /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED47218293FC32C007053CD /* StockTableViewCell.swift */; };
 		8ED7779C2948264900559995 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7779B2948264900559995 /* SearchViewController.swift */; };
 		8ED9E41628F365A00061B47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9E41528F365A00061B47F /* AppDelegate.swift */; };
@@ -31,7 +30,6 @@
 		8E5875DE292EC5F700A8CC4E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8E663B3A28F381540011F9DB /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		8EC25BA428F36BA1007A4E10 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		8EC25BA628F36BB6007A4E10 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		8ED47218293FC32C007053CD /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
 		8ED7779B2948264900559995 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		8ED9E41228F365A00061B47F /* Finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +103,6 @@
 				8ED9E42028F365A40061B47F /* Main.storyboard */,
 				8ED9E42328F365A40061B47F /* Info.plist */,
 				8EC25BA428F36BA1007A4E10 /* LoginViewController.swift */,
-				8EC25BA628F36BB6007A4E10 /* FeedViewController.swift */,
 				8E663B3A28F381540011F9DB /* PostCell.swift */,
 				8E29CD472900A6110035E3D1 /* CommentCell.swift */,
 				8E5875DE292EC5F700A8CC4E /* SignUpViewController.swift */,
@@ -237,7 +234,6 @@
 				8E5875DF292EC5F700A8CC4E /* SignUpViewController.swift in Sources */,
 				8ED9E41628F365A00061B47F /* AppDelegate.swift in Sources */,
 				8E17A2C2293589BA00051ABC /* StocksViewController.swift in Sources */,
-				8EC25BA728F36BB6007A4E10 /* FeedViewController.swift in Sources */,
 				8ED9E41828F365A00061B47F /* SceneDelegate.swift in Sources */,
 				8E663B3B28F381540011F9DB /* PostCell.swift in Sources */,
 				8E29CD482900A6110035E3D1 /* CommentCell.swift in Sources */,
