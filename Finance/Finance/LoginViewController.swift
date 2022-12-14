@@ -16,7 +16,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBOutlet weak var usernameLabel: UILabel!
     
+    @IBOutlet weak var passwordLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +38,8 @@ class LoginViewController: UIViewController {
             }
             else {
                 print("Error: \(String(describing: error?.localizedDescription))")
+                self.usernameLabel.backgroundColor = UIColor.red
+                self.passwordLabel.backgroundColor = UIColor.red
             }
             
         }
