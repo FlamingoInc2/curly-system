@@ -28,6 +28,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var compLogo: UIImageView!
     
     
+    @IBOutlet weak var scroll: UIScrollView!
     
     
     
@@ -46,7 +47,8 @@ class SearchViewController: UIViewController {
             compLogo.sd_setImage(with: URL(string: "\(result?.logo ?? "")"), placeholderImage: UIImage(named: "placeholder.png"))
             MarketCap.text = "\(result?.marketcap ?? 0)"
             Description.text = "\(result?.description ?? "")"
-            
+            Description.sizeToFit()
+            scroll.contentSize = CGSizeMake(self.view.frame.width, self.view.frame.height+100)
             
         }
         
